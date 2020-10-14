@@ -48,15 +48,28 @@ body {
 /* style for intro page */
 .introPage {
   background-color: black;
+  text-align: center;
 }
+
+.enter {
+  padding: 7px 20px;
+  margin: 50px;
+  background-color: black;
+  border-radius: 15%;
+  border-color: white;
+}
+
+.enter a {
+  color: white;
+}
+
 /* style for home page */
 
 .ml5 {
   position: relative;
   font-weight: 300;
-  font-size: 4.5em;
+  font-size: 7em;
   color: #ffffff;
-  text-align: center;
   margin-top: 250px;
 }
 
