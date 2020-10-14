@@ -1,0 +1,193 @@
+/* style for entire site */
+body {
+  background-color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.main {
+  margin-left: 200px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.profilePhoto {
+  padding: 15px;
+  border-radius: 100px;
+}
+
+/* style for intro page */
+.introPage {
+  background-color: black;
+}
+/* style for home page */
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+.signatureTwo {
+  text-align: center;
+  color: #0f3057;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  opacity: 60%;
+}
+
+.about {
+  margin-left: 250px;
+  max-width: 770px;
+}
+
+/* style for About Me page */
+.bio {
+  margin-left: 250px;
+  max-width: 770px;
+}
+
+.bio h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.signatureThree {
+  text-align: center;
+  color: #0f3057;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  opacity: 60%;
+}
+
+/* style for Resume page */
+
+.paper {
+  border: 1px outset rgb(170, 169, 169);
+  margin-left: 250px;
+  margin-right: 100px;
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 8px 13px 11px #888888;
+}
+
+.resumeHeading {
+  text-align: center;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+.leftSide {
+  text-align: center;
+}
+
+.signatureFour {
+  padding-top: 15px;
+  text-align: center;
+  color: #0f3057;
+  width: 100%;
+  opacity: 60%;
+}
+
+/* style for contact me page */
+
+.contact {
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+.signatureOne {
+  text-align: center;
+  color: #0f3057;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  opacity: 60%;
+}
+
+.fa-facebook-square {
+  color: blue;
+}
+.fa-instagram {
+  font-size: 20px;
+  color: blue;
+}
+
+.fa-linkedin {
+  color: blue;
+}
+
+.fa-envelope {
+  color: blue;
+}
+
+i {
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
