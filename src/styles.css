@@ -1,6 +1,20 @@
 /* style for entire site */
-body {
-  background-color: white;
+
+.bio,
+.contact,
+.paper {
+  animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
 
 .sidenav {
@@ -14,16 +28,20 @@ body {
   overflow-x: hidden;
 }
 
-.sidenav a {
+.navLinks {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
   display: block;
+}
+
+.sidenav a {
+  color: white;
 }
 
 .sidenav a:hover {
   color: grey;
+  text-decoration: none;
 }
 
 .main {
@@ -115,19 +133,32 @@ body {
 /* style for About Me page */
 .bio {
   margin-left: 250px;
-  max-width: 770px;
 }
 
 .bio h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 25px 0;
 }
+
+.aboutRight {
+  max-width: 800px;
+  padding-left: 40px;
+}
+
+.imageContainer {
+  padding-top: 20px;
+}
+.aboutImages {
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+}
+
 .signatureThree {
   text-align: center;
   color: #0f3057;
   width: 100%;
+  padding-top: 15px;
   bottom: 0;
-  position: fixed;
   opacity: 60%;
 }
 
@@ -170,6 +201,13 @@ h5 {
   text-align: center;
   border: 2px solid black;
   padding: 15px;
+  margin: 10% 30%;
+
+  box-shadow: 8px 13px 11px #888888;
+}
+
+.contact h1 {
+  padding: 10px;
 }
 
 .signatureOne {
