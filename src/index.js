@@ -44,5 +44,5 @@ anime
     targets: ".ml5",
     duration: 100000,
     easing: "easeOutExpo",
-    delay: 1000,
+    delay: 8000,
   });

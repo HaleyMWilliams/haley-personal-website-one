@@ -2,14 +2,17 @@
 
 .bio,
 .contact,
-.paper {
+.resumeContainer,
+.introPage,
+.enter {
   animation: transitionIn 1s;
+  margin-top: 100px;
 }
 
 @keyframes transitionIn {
   from {
     opacity: 0;
-    transform: rotateX(-10deg);
+    transform: rotateX(-20deg);
   }
   to {
     opacity: 1;
@@ -17,78 +20,74 @@
   }
 }
 
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
+nav {
   top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: hidden;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.navLinks {
-  padding: 6px 8px 6px 16px;
+nav .navLinks {
   text-decoration: none;
-  font-size: 25px;
-  display: block;
+  font-size: 20px;
+  float: right;
+  padding: 10px;
+  font-family: "Didact Gothic", sans-serif;
 }
 
-.sidenav a {
-  color: white;
+.navHaley {
+  font-family: "Megrim", cursive;
+  font-size: 40px;
 }
 
-.sidenav a:hover {
+nav a {
+  color: black;
+  padding: 5px 40px 5px 40px;
+}
+
+nav a:hover {
   color: grey;
   text-decoration: none;
 }
 
 .main {
-  margin-left: 200px;
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-.profilePhoto {
-  padding: 15px;
-  border-radius: 100px;
-}
-
 /* style for intro page */
+
 .introPage {
-  background-color: black;
+  background-color: white;
   text-align: center;
 }
 
 .enter {
-  padding: 7px 20px;
-  margin: 50px;
-  background-color: black;
-  border-radius: 15%;
-  border-color: white;
+  bottom: 0;
+  padding: 20px;
+  position: fixed;
+  font-size: 20px;
+  font-weight: medium;
+  color: black;
+  font-family: "Didact Gothic", sans-serif;
 }
 
-.enter a {
-  color: white;
+.enter i {
+  padding: 10px;
 }
-
-/* style for home page */
+.enter:hover {
+  color: grey;
+  text-decoration: none;
+}
 
 .ml5 {
   position: relative;
   font-weight: 300;
   font-size: 7em;
-  color: #ffffff;
+  color: black;
   margin-top: 250px;
+  font-family: "Megrim", cursive;
 }
 
 .ml5 .text-wrapper {
@@ -126,22 +125,23 @@
 }
 
 .about {
-  margin-left: 250px;
-  max-width: 770px;
+  margin-top: 80px;
 }
 
 /* style for About Me page */
+
 .bio {
-  margin-left: 250px;
+  margin-top: 80px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18.5px;
 }
 
 .bio h1 {
+  text-align: left;
   padding: 25px 0;
-}
-
-.aboutRight {
-  max-width: 800px;
-  padding-left: 40px;
+  font-family: "Megrim", cursive;
 }
 
 .imageContainer {
@@ -149,8 +149,7 @@
 }
 .aboutImages {
   display: block;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 5px;
 }
 
 .signatureThree {
@@ -164,22 +163,53 @@
 
 /* style for Resume page */
 
+.opener {
+  text-align: center;
+}
+
+.opener h1 {
+  font-family: "Megrim", cursive;
+}
+
+.opener a {
+  font-family: "Didact Gothic", sans-serif;
+  color: black;
+  text-decoration: underline;
+}
+
+.opener a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
 .paper {
   border: 1px outset rgb(170, 169, 169);
-  margin-left: 250px;
-  margin-right: 100px;
-  margin-top: 25px;
+  margin: 40px 15%;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 8px 13px 11px #888888;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 .resumeHeading {
   text-align: center;
 }
 
+.resumeHeading h2 {
+  font-size: 45px;
+}
 h5 {
   text-decoration: underline;
+  font-weight: bolder;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.time {
+  font-style: italic;
 }
 
 .leftSide {
@@ -199,14 +229,15 @@ h5 {
 .contact {
   border-radius: 15px;
   text-align: center;
-  border: 2px solid black;
+  border: 1px solid grey;
   padding: 15px;
   margin: 10% 30%;
-
+  font-family: "Didact Gothic", sans-serif;
   box-shadow: 8px 13px 11px #888888;
 }
 
 .contact h1 {
+  font-family: "Megrim", cursive;
   padding: 10px;
 }
 
@@ -235,7 +266,7 @@ h5 {
   color: blue;
 }
 
-i {
+.contact i {
   font-size: 20px;
   padding: 10px;
 }

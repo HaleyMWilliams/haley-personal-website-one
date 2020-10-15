@@ -9,23 +9,37 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55bbf76c88.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Resume - Haley Williams</title>
   </head>
 
   <body>
-    <div class="sidenav resumeSide">
-      <a href="./index.html">
-        <img src="./media/haley-profile-pic.jpg" alt="Haley Profile Image" width="200px" class="profilePhoto" /></a>
-      <div class="navLinks">
-        <a href="./about-me.html">About Me</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./contact.html">Contact Me</a>
-      </div>
+    <nav>
+      <span class="logo">
+        <img src="./media/HW-logo.PNG" width="75px" />
+        <a href="./index.html" class="navHaley">Haley Williams</a>
+      </span>
+    <div class="navLinks">
+      <a href="./about-me.html">About Me</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact Me</a>
     </div>
-    <div class="paper">
-      <div class="resumeHeading">
-        <h1>Haley Williams</h1>
+  </nav>
+<div class="resumeContainer">
+  <div class="opener">
+      <h1>Resume</h1>
+      <p>Thanks for your interest in my resume! Below you will find my most recent work and internship history, <br />along with a link to a downloadable PDF copy. 
+      <br /> <br />
+      <i class="fas fa-angle-double-left"></i>
+          <a href="./media/Haley Williams Resume.pdf" target="_blank" download>Resume PDF</a>
+      <i class="fas fa-angle-double-right"></i>
+   </div>
+  <div class="paper">
+    <div class="resumeHeading">
+        <h2>Haley Williams</h2>
         <p>
           New York, New York |
           <a href="https://github.com/HaleyMWilliams" target="_blank">GitHub</a>
@@ -39,7 +53,7 @@
         <hr />
       </div>
       <div class="row">
-        <div class="col-2 leftSide">
+        <div class="col-3 leftSide">
           <h5>TECHNICAL SKILLS</h5>
           <p>
             HTML5 <br />
@@ -108,7 +122,7 @@
           </ul>
           <h5>PROFESSIONAL EXPERIENCE</h5>
           <h6>Fashion PR Coordinator at HL Group</h6>
-          <p>September 2019 – April 2020</p>
+          <p class="time">September 2019 – April 2020</p>
           <ul>
             <li>
               Developed and distributed client pitches to long- and short-lead
@@ -142,7 +156,7 @@
             <li>Provided administrative support to internal account teams</li>
           </ul>
           <h6>Ecommerce Operations Coordinator</h6>
-          <p>November 2018 – September 2019</p>
+          <p class="time">November 2018 – September 2019</p>
           <ul>
             <li>
               Processed and fulfilled customer orders via the phone and Shopify
@@ -162,7 +176,7 @@
           <h6>
             Intimates and Accessories Manager in Training at Anthropologie
           </h6>
-          <p>February 2018 – November 2018</p>
+          <p class="time">February 2018 – November 2018</p>
           <ul>
             <li>
               Managed over 100 sales associates at the company's flagship
@@ -188,7 +202,7 @@
             Stylist Intern Zanna Roberts Rassi: Marie Claire Senior Fashion
             Editor, E! News Fashion Correspondent, and Co-Founder of Milk Makeup
           </h6>
-          <p>September 2017 – December 2017</p>
+          <p class="time">September 2017 – December 2017</p>
           <ul>
             <li>
               Assisted with the styling and coordination of photo and video
@@ -209,7 +223,7 @@
           </ul>
 
           <h6>Community Outreach Intern at Forema Boutique</h6>
-          <p>January 2017 – May 2017</p>
+          <p class="time">January 2017 – May 2017</p>
           <ul>
             <li>
               Planned and executed events for different university student
@@ -225,6 +239,7 @@
           </ul>
         </div>
       </div>
+    </div>
     </div>
     <p class="signatureFour">Coded by Haley Williams 😎</p>
   </body>
