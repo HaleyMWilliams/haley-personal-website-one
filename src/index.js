@@ -8,7 +8,7 @@ anime
     opacity: [0.5, 1],
     scaleX: [0, 1],
     easing: "easeInOutExpo",
-    duration: 700,
+    duration: 1000,
   })
   .add({
     targets: ".ml5 .line",

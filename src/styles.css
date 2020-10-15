@@ -44,7 +44,7 @@ nav .navLinks {
 
 nav a {
   color: black;
-  padding: 5px 40px 5px 40px;
+  padding: 40px;
 }
 
 nav a:hover {
@@ -233,7 +233,7 @@ h6 {
   padding: 15px;
   margin: 10% 30%;
   font-family: "Didact Gothic", sans-serif;
-  box-shadow: 8px 13px 11px #888888;
+  box-shadow: 13px 13px 13px 13px #888888;
 }
 
 .contact h1 {
