@@ -25,7 +25,7 @@ nav {
   position: fixed;
   background-color: white;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -35,7 +35,7 @@ nav .navLinks {
   font-weight: 1px;
   float: right;
   font-family: "Didact Gothic", sans-serif;
-  padding: 10px;
+  padding-top: 20px;
 }
 
 .navHaley {
@@ -54,10 +54,6 @@ nav a {
 nav a:hover {
   color: grey;
   text-decoration: none;
-}
-
-.main {
-  padding: 0px 10px;
 }
 
 /* style for intro page */
@@ -232,20 +228,26 @@ h6 {
 
 .contactContainer {
   text-align: center;
-  margin: 5%;
+  margin-top: 5%;
   font-family: "Didact Gothic", sans-serif;
   position: relative;
+  padding-top: 5px;
 }
 
 .contact {
   position: absolute;
   bottom: 35%;
   left: 36%;
+  color: black;
 }
 
 .contact h1 {
   font-family: "Megrim", cursive;
   padding: 3px;
+}
+
+.contact a {
+  color: black;
 }
 
 .signatureOne {
@@ -257,15 +259,8 @@ h6 {
   opacity: 60%;
 }
 
-.fa-linkedin {
-  color: blue;
-}
-
-.fa-envelope {
-  color: blue;
-}
-
 .contact i {
   font-size: 20px;
   padding: 5px;
+  color: black;
 }
