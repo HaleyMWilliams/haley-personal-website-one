@@ -235,8 +235,8 @@ h6 {
 }
 
 .contact {
-  position: fixed;
-  bottom: 235px;
+  position: absolute;
+  bottom: 170px;
   left: 510px;
   color: black;
 }
