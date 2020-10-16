@@ -1,7 +1,7 @@
 /* style for entire site */
 
 .bio,
-.contact,
+.contactContainer,
 .resumeContainer,
 .introPage,
 .enter {
@@ -32,6 +32,7 @@ nav {
 nav .navLinks {
   text-decoration: none;
   font-size: 20px;
+  font-weight: 1px;
   float: right;
   font-family: "Didact Gothic", sans-serif;
   padding: 10px;
@@ -231,7 +232,6 @@ h6 {
 
 .contactContainer {
   text-align: center;
-  padding: 40px;
   margin: 5%;
   font-family: "Didact Gothic", sans-serif;
   position: relative;
@@ -239,13 +239,13 @@ h6 {
 
 .contact {
   position: absolute;
-  bottom: 50%;
-  left: 35%;
+  bottom: 35%;
+  left: 36%;
 }
 
 .contact h1 {
   font-family: "Megrim", cursive;
-  padding: 10px;
+  padding: 3px;
 }
 
 .signatureOne {
@@ -255,14 +255,6 @@ h6 {
   bottom: 0;
   position: fixed;
   opacity: 60%;
-}
-
-.fa-facebook-square {
-  color: blue;
-}
-.fa-instagram {
-  font-size: 20px;
-  color: blue;
 }
 
 .fa-linkedin {
@@ -275,5 +267,5 @@ h6 {
 
 .contact i {
   font-size: 20px;
-  padding: 10px;
+  padding: 5px;
 }
