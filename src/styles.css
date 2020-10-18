@@ -228,17 +228,24 @@ h6 {
 
 .contactContainer {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 6%;
+  margin-left: 27%;
+  margin-right: 27%;
   font-family: "Didact Gothic", sans-serif;
   position: relative;
-  padding-top: 5px;
+  display: inline-block;
 }
 
-.contact {
+.contactContainer .contact {
   position: absolute;
-  bottom: 170px;
-  left: 510px;
-  color: black;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 27%;
+  text-align: center;
+  width: 70%;
+  padding-left: 3%;
 }
 
 .contact h1 {
