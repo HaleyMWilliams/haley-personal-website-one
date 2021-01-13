@@ -3,6 +3,7 @@
 .bio,
 .contactContainer,
 .resumeContainer,
+.projectsContainer,
 .introPage,
 .enter {
   animation: transitionIn 1s;
@@ -125,13 +126,13 @@ nav a:hover {
 }
 
 .about {
-  margin-top: 80px;
+  margin-top: 2.5em;
 }
 
 /* style for About Me page */
 
 .bio {
-  margin-top: 80px;
+  margin-top: 2.5em;
   margin-left: 70px;
   margin-right: 70px;
   font-family: "Didact Gothic", sans-serif;
@@ -224,6 +225,40 @@ h6 {
   opacity: 60%;
 }
 
+/* style for projects page*/
+.projects {
+  margin-top: 2.5em;
+  text-align: center;
+  font-family: "Megrim", cursive;
+}
+
+.row {
+  padding: 2em;
+}
+
+.col {
+  padding: 1em;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.projectsContainer img {
+  height: 300px;
+}
+
+.card-footer {
+  text-align: center;
+}
+.card-footer a {
+  color: black;
+  min-width: 5em;
+  max-width: 5em;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 200ms;
+  box-shadow: 0 0 30px #888888;
+}
 /* style for contact me page */
 
 .contactContainer {
