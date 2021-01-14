@@ -1,0 +1,81 @@
+/* style for intro page */
+
+.introContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introPage {
+  background-color: white;
+  text-align: center;
+}
+
+.enter {
+  bottom: 0;
+  padding: 1em;
+  position: fixed;
+  font-size: 1.2em;
+  font-weight: medium;
+  color: black;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.enter i {
+  padding: 0.5em;
+}
+.enter:hover {
+  color: grey;
+  text-decoration: none;
+}
+.ampersand img {
+  width: 2em;
+}
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 7em;
+  color: black;
+  margin-top: 2em;
+  font-family: "Megrim", cursive;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+.signatureTwo {
+  text-align: center;
+  color: #0f3057;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  opacity: 60%;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1025px) {
+  .ml5 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .ml5 {
+    font-size: 2em;
+  }
+
+  .ampersand img {
+    width: 1em;
+  }
+}
