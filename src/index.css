@@ -1,14 +1,39 @@
 /* style for intro page */
-
-.introContainer div {
+.introContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-family: "Megrim", cursive;
+  font-size: 4em;
 }
 
-.introPage {
-  background-color: white;
+.introPage p {
   text-align: center;
+}
+
+.ampersand img {
+  width: 2em;
+}
+
+.ml5 {
+  position: relative;
+  color: black;
+  font-family: "Megrim", cursive;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
 }
 
 .enter {
@@ -28,50 +53,26 @@
   color: grey;
   text-decoration: none;
 }
-.ampersand img {
-  width: 2em;
-}
-.ml5 {
-  position: relative;
-  font-weight: 300;
-  font-size: 7em;
-  color: black;
-  margin-top: 2em;
-  font-family: "Megrim", cursive;
-}
-
-.ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  line-height: 1em;
-}
-
-.ml5 .letters {
-  display: inline-block;
-  opacity: 0;
-}
-.signatureTwo {
-  text-align: center;
-  color: #0f3057;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-  opacity: 60%;
-}
 
 /*Media Queries*/
 
 @media only screen and (max-width: 1025px) {
-  .ml5 {
-    font-size: 4em;
+  .introContainer {
+    font-size: 3em;
   }
 }
 
 @media only screen and (max-width: 770px) {
-  .ml5 {
+  .introContainer {
+    font-size: 3em;
+  }
+  .ampersand img {
+    width: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .introContainer {
     font-size: 2em;
   }
 
