@@ -1,0 +1,88 @@
+/* style for About Me page */
+.about {
+  margin-top: 2.5em;
+  margin: 2.5em;
+}
+
+.aboutContainer {
+  display: grid;
+}
+
+.bio {
+  margin-top: 4em;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.2em;
+}
+
+.bio h1 {
+  text-align: left;
+  font-family: "Megrim", cursive;
+  padding-bottom: 0.2em;
+}
+
+.signatureThree {
+  text-align: center;
+  color: #0f3057;
+  width: 100%;
+  padding-top: 0.5em;
+  bottom: 0;
+  opacity: 60%;
+}
+
+@media only screen and (min-width: 1026px) {
+  .imageContainer {
+    grid-column: 1;
+    padding: 0.7em;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutRight {
+    grid-column: 2;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .imageContainer {
+    grid-row: 2;
+  }
+
+  .imageContainer img {
+    width: 15em;
+  }
+
+  .aboutRight {
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .bio {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .bio h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .aboutRight p {
+    font-size: 1em;
+  }
+
+  .imageContainer img {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  nav .navLinks {
+    margin: 0 auto;
+  }
+}

@@ -3,10 +3,11 @@
 .bio,
 .contactContainer,
 .resumeContainer,
+.projectsContainer,
 .introPage,
 .enter {
   animation: transitionIn 1s;
-  margin-top: 100px;
+  margin-top: 4em;
 }
 
 @keyframes transitionIn {
@@ -31,20 +32,21 @@ nav {
 
 nav .navLinks {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 1px;
-  float: right;
+  display: flex;
+  margin-left: auto;
   font-family: "Didact Gothic", sans-serif;
-  padding-top: 20px;
+  padding-top: 0.5em;
 }
 
 .navHaley {
   font-family: "Megrim", cursive;
-  font-size: 40px;
+  font-size: 2.3em;
 }
 
 .navLinks a {
-  padding-right: 40px;
+  padding-right: 1em;
 }
 
 nav a {
@@ -56,218 +58,49 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* style for intro page */
+@media only screen and (max-width: 1025px) {
+  .logo a {
+    font-size: 1.5em;
+  }
 
-.introPage {
-  background-color: white;
-  text-align: center;
+  .logo img {
+    width: 2em;
+  }
+
+  .nav {
+    padding-bottom: 1em;
+  }
+
+  .navLinks a {
+    font-size: 1em;
+  }
 }
 
-.enter {
-  bottom: 0;
-  padding: 20px;
-  position: fixed;
-  font-size: 20px;
-  font-weight: medium;
-  color: black;
-  font-family: "Didact Gothic", sans-serif;
+@media only screen and (max-width: 770px) {
+  .logo a {
+    font-size: 1em;
+  }
+
+  .logo img {
+    width: 1.5em;
+  }
+
+  .navLinks a {
+    font-size: 0.75em;
+  }
 }
 
-.enter i {
-  padding: 10px;
-}
-.enter:hover {
-  color: grey;
-  text-decoration: none;
-}
+@media only screen and (max-width: 460px) {
+  .logo {
+    text-align: center;
+  }
 
-.ml5 {
-  position: relative;
-  font-weight: 300;
-  font-size: 7em;
-  color: black;
-  margin-top: 250px;
-  font-family: "Megrim", cursive;
-}
+  .navLinks a {
+    font-size: 0.6em;
+    padding-right: 0.5em;
+  }
 
-.ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  line-height: 1em;
-}
-
-.ml5 .line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 3px;
-  width: 100%;
-  background-color: #ffffff;
-  transform-origin: 0.5 0;
-}
-
-.ml5 .letters {
-  display: inline-block;
-  opacity: 0;
-}
-.signatureTwo {
-  text-align: center;
-  color: #0f3057;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-  opacity: 60%;
-}
-
-.about {
-  margin-top: 80px;
-}
-
-/* style for About Me page */
-
-.bio {
-  margin-top: 80px;
-  margin-left: 70px;
-  margin-right: 70px;
-  font-family: "Didact Gothic", sans-serif;
-  font-size: 18.5px;
-}
-
-.bio h1 {
-  text-align: left;
-  padding: 25px 0;
-  font-family: "Megrim", cursive;
-}
-
-.imageContainer {
-  padding-top: 20px;
-}
-.aboutImages {
-  display: block;
-  padding: 5px;
-}
-
-.signatureThree {
-  text-align: center;
-  color: #0f3057;
-  width: 100%;
-  padding-top: 15px;
-  bottom: 0;
-  opacity: 60%;
-}
-
-/* style for Resume page */
-
-.opener {
-  text-align: center;
-}
-
-.opener h1 {
-  font-family: "Megrim", cursive;
-}
-
-.opener a {
-  font-family: "Didact Gothic", sans-serif;
-  color: black;
-  text-decoration: underline;
-}
-
-.opener a:hover {
-  color: grey;
-  text-decoration: none;
-}
-
-.paper {
-  border: 1px outset rgb(170, 169, 169);
-  margin: 40px 15%;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 8px 13px 11px #888888;
-  font-family: "Didact Gothic", sans-serif;
-}
-
-.resumeHeading {
-  text-align: center;
-}
-
-.resumeHeading h2 {
-  font-size: 45px;
-}
-h5 {
-  text-decoration: underline;
-  font-weight: bolder;
-}
-
-h6 {
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.time {
-  font-style: italic;
-}
-
-.leftSide {
-  text-align: center;
-}
-
-.signatureFour {
-  padding-top: 15px;
-  text-align: center;
-  color: #0f3057;
-  width: 100%;
-  opacity: 60%;
-}
-
-/* style for contact me page */
-
-.contactContainer {
-  text-align: center;
-  margin-top: 6%;
-  margin-left: 27%;
-  margin-right: 27%;
-  font-family: "Didact Gothic", sans-serif;
-  position: relative;
-  display: inline-block;
-}
-
-.contactContainer .contact {
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 27%;
-  text-align: center;
-  width: 70%;
-  padding-left: 3%;
-}
-
-.contact h1 {
-  font-family: "Megrim", cursive;
-  padding: 3px;
-}
-
-.contact a {
-  color: black;
-}
-
-.signatureOne {
-  text-align: center;
-  color: #0f3057;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-  opacity: 60%;
-}
-
-.contact i {
-  font-size: 20px;
-  padding: 5px;
-  color: black;
+  .navLinks div {
+    padding-bottom: 3em;
+  }
 }

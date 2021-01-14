@@ -12,31 +12,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/55bbf76c88.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="stylesheet" href="../src/resume.css" />
     <title>Resume - Haley Williams</title>
-        <link rel="shortcut icon" href="./media/whitetext_blacksquare.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../media/whitetext_blacksquare.png" type="image/x-icon">
 
   </head>
 
   <body >
-    <nav>
-      <span class="logo">
-      <a href="./index.html" class="navHaley">
-        <img src="./media/whitetext_blacksquare.png" width="75px" />Haley Williams</a>
-    </span>
-    <div class="navLinks">
-      <a href="./about-me.html">About Haley</a>
-      <a href="./resume.html">Résumé</a>
-      <a href="./contact.html">Contact Me</a>
-    </div>
-  </nav>
+    <nav class="nav">
+      <div class="logo">
+        <a href="./index.html" class="navHaley">
+          <img src="../media/whitetext_blacksquare.png" width="60em" />Haley Williams</a>
+      </div>
+      <div class="navLinks">
+        <a href="./about-me.html">About Haley</a>
+        <a href="./resume.html">Résumé</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
 <div class="resumeContainer">
   <div class="opener">
       <h1>Résumé</h1>
-      <p>Thanks for your interest in my résumé! Below you will find my most recent work and internship history, <br />along with a link to a downloadable PDF copy. 
+      <p>Thank you for your interest in my résumé! Below you will find my most recent work and internship history, <br />along with a link to a downloadable PDF copy. 
       <br /> <br />
       <i class="fas fa-angle-double-left"></i>
-          <a href="./media/Haley Williams Resume.pdf" target="_blank" download>Résumé PDF</a>
+          <a href="../media/Haley Williams Resume.pdf" target="_blank" download>Résumé PDF</a>
       <i class="fas fa-angle-double-right"></i>
    </div>
   <div class="paper">
@@ -48,25 +50,24 @@
           |
           <a
             href="https://www.linkedin.com/in/haleymichelewilliams/"
-            target="_blank"
-            >LinkedIn</a
-          >
+            target="_blank">
+            LinkedIn</a>
         </p>
         <hr />
       </div>
-      <div class="row">
-        <div class="col-3 leftSide">
+      <div class="resume-grid">
+        <div class="leftSide">
           <h5>TECHNICAL SKILLS</h5>
           <p>
-            HTML5 <br />
-            CSS3<br />
-            JavaScript6 <br />
+            HTML <br />
+            CSS<br />
+            JavaScript <br />
             React <br />
-            Bootstrap<br />
-            AJAX <br />
-            AXIOS <br />
-            API <br />
+            Node.js <br />
+            API<br />
+            REST API <br />
             Git<br />
+            PostgreSQL<br/>
             Microsoft Office <br />
             Google Drives <br />
           </p>
@@ -90,8 +91,13 @@
           <h5>EDUCATION</h5>
           <p>
             SheCodes Plus React <br />Coding Bootcamp, 2020
+          </p>
+          <p>
+            The Complete Web Developer 2021,
             <br />
-            <br />
+           <em>Zero to Mastery Academy</em>
+          </p>
+          <p>
             University of
             <br />
             Central Florida, 2017
@@ -99,31 +105,31 @@
             <em
               >Bachelor of Science,
               <br />
-              Human Communication</em
-            >
+              Human Communication</em>
           </p>
         </div>
-        <div class="col experience">
-          <h5>SHECODES PLUS REACT PROJECTS</h5>
+        <div class="experience">
+          <h5>PROFESSIONAL EXPERIENCE</h5>
+          <h6>Front End Website Developer (student)</h6>
+          <p class="time">June 2020 – January 2021</p>
           <ul>
             <li>
-              <a
-                href="https://modest-rosalind-7d849f.netlify.app/"
-                target="_blank"
-              >
-                Weather App
-              </a>
+              <a href="https://haleys-smart-brain.herokuapp.com/" target="_blank">Smart Brain Facial Detection</a> 
+              A fullstack web application that, once a user creates an account, will detect a face in a given image URL, 
+              in addition to tracking and displaying the number of URLs a logged in user has entered; 
+              created using HTML, CSS, React, PostgreSQL, REST API, and Node.js.
             </li>
             <li>
-              <a
-                href="https://trusting-carson-2a8f57.netlify.app/"
-                target="_blank"
-              >
-                React Weather App
-              </a>
+              <a href="https://haleys-react-weather-app.netlify.app/" target="_blank">React Weather App</a>
+              – An interactive web application that displays the current weather and forecast in a searched city; 
+              created using HTML, CSS, React, and Open Weather Map API.
             </li>
-          </ul>
-          <h5>PROFESSIONAL EXPERIENCE</h5>
+            <li>
+              <a href="https://the-robot-friends.netlify.app/" target="_blank">Robo Friends App</a>
+              – A user-friendly app that allows you to filter through the robot friends by name; 
+              created using HTML, CSS, React, and REST API.
+            </li>
+          </ul>  
           <h6>Fashion PR Coordinator at HL Group</h6>
           <p class="time">September 2019 – April 2020</p>
           <ul>

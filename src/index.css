@@ -1,0 +1,82 @@
+/* style for intro page */
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Megrim", cursive;
+  font-size: 4em;
+}
+
+.introPage p {
+  text-align: center;
+}
+
+.ampersand img {
+  width: 2em;
+}
+
+.ml5 {
+  position: relative;
+  color: black;
+  font-family: "Megrim", cursive;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+.enter {
+  bottom: 0;
+  padding: 1em;
+  position: fixed;
+  font-size: 1.2em;
+  font-weight: medium;
+  color: black;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.enter i {
+  padding: 0.5em;
+}
+.enter:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1025px) {
+  .introContainer {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .introContainer {
+    font-size: 3em;
+  }
+  .ampersand img {
+    width: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .introContainer {
+    font-size: 2em;
+  }
+
+  .ampersand img {
+    width: 1em;
+  }
+}
