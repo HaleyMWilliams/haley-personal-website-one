@@ -67,6 +67,10 @@
 }
 
 @media only screen and (max-width: 1025px) {
+  body {
+    max-width: 1000px;
+  }
+
   .contactContainer img {
     width: 26em;
   }
@@ -92,6 +96,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    max-width: 600px;
+  }
+
   .contactContainer {
     margin-top: 10%;
   }
@@ -129,6 +137,10 @@
 }
 
 @media only screen and (max-width: 460px) {
+  body {
+    max-width: 460px;
+  }
+
   .contactContainer {
     margin-top: 12%;
   }
