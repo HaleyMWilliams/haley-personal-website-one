@@ -15,16 +15,20 @@
   left: 0;
   right: 0;
   text-align: center;
-  padding-left: 3%;
 }
 
-.contact h1 {
+.contact .me {
   font-family: "Megrim", cursive;
-  padding: 0.2em;
 }
 
 .contact a {
   color: black;
+}
+
+.contact i {
+  padding: 0.1em;
+  color: black;
+  font-size: 1em;
 }
 
 .signatureOne {
@@ -36,18 +40,13 @@
   opacity: 60%;
 }
 
-.contact i {
-  font-size: 1em;
-  padding: 0.3em;
-  color: black;
-}
-
 @media only screen and (min-width: 1026px) {
   .contactContainer img {
     width: 34em;
   }
+
   .contactContainer {
-    margin-top: 6%;
+    margin-top: 4%;
     margin-left: 27%;
     margin-right: 27%;
     min-width: 360px;
@@ -57,11 +56,19 @@
     width: 70%;
     top: 27%;
   }
+
+  .contact .me {
+    font-size: 2.5em;
+  }
+
+  .contactContent {
+    font-size: 0.95em;
+  }
 }
 
 @media only screen and (max-width: 1025px) {
   .contactContainer img {
-    width: 34em;
+    width: 26em;
   }
 
   .contactContainer {
@@ -74,11 +81,50 @@
     width: 70%;
     top: 27%;
   }
+
+  .contact .me {
+    font-size: 1.75em;
+  }
+
+  .contactContent {
+    font-size: 0.7em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .contactContainer {
     margin-top: 10%;
+  }
+
+  .contactContainer img {
+    width: 20em;
+  }
+
+  .contactContainer {
+    margin-top: 8%;
+    margin-left: 27%;
+    margin-right: 27%;
+  }
+
+  .contactContainer .contact {
+    width: 70%;
+    top: 27%;
+  }
+
+  .contact .me {
+    font-size: 1em;
+  }
+
+  .contactContent {
+    font-size: 0.5em;
+  }
+
+  .navLinks {
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin: 0 auto;
   }
 }
 
@@ -87,7 +133,11 @@
     margin-top: 12%;
   }
 
-  nav .navLinks {
-    margin-left: auto;
+  .navLinks {
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin: 0 auto;
   }
 }
